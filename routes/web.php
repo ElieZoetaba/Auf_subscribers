@@ -1,6 +1,7 @@
 <?php
-use index;
 use App\Controller\PostController;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,5 +39,4 @@ Route::get('/create', [App\Http\Controllers\PostController::class, 'index'])->na
 Route::get('/show', [App\Http\Controllers\PostController::class, 'index'])->name('show');
 Route::get('/edit/{id}', [App\Http\Controllers\PostController::class, 'edit']);
 Route::resource("/create", App\Http\Controllers\PostController::class);
-
 
