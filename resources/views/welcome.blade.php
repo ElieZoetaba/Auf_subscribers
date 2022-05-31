@@ -421,18 +421,14 @@
 
             <div class="row d-flex align-items-center">
                 <div class="col-3 text-center p-2 border-1 shadow rounded-circle rounded">
-                    <p class="text-light overflow overflow-hidden">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At unde asperiores nesciunt id. Corrupti harum voluptatibus consequatur fuga tempora magnam animi qui dolore at aspernatur iste nisi, ea quos repellendus.
-                    </p>
+                   <img src="{{asset('img/auth.png')}}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-primary border-2 rounded">
                 </div>
-                <div class=" col-6">
+                <div class=" col-6 p-2 border-1 shadow ">
                     <img src="{{ asset('img/home4.jpg') }}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-danger border-2 rounded">
                 </div>
-                <div class="col-3 text-center p-2 border border-1 shadow rounded-circle rounded btn btn-1">
-                <p class="text-light overflow overflow-hidden ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At unde asperiores nesciunt id. Corrupti harum voluptatibus consequatur fuga tempora magnam animi qui dolore at aspernatur iste nisi, ea quos repellendus.
-                </p>
-            </div>
+                <div class="col-3 text-center p-2 border-1 shadow rounded-circle rounded btn btn-2">
+                    <img src="{{asset('img/sign.png')}}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-danger border-2 rounded">
+                 </div>
             <div class="p-3 text-center btn btn-1">
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit veritatis porro adipisci commodi quae itaque omnis eveniet illum dolores alias, nulla pariatur dolore iste in laudantium, tempore ipsam! Pariatur, minus.
