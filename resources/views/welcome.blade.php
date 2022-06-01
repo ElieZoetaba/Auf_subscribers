@@ -417,25 +417,34 @@
 <body class="antialiased">
     @extends('layouts.app')
     @section('content')
-        <div class="container w-100 h-100vh">
+        <div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="py-8 mx-auto sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
+                            Welcome to the
+                            <span class="text-indigo-600">
+                                {{ config('app.name', 'Laravel') }}
+                            </span>
+                            Dashboard
+                        </h2>
+                        {{-- container  img shadown --}}
+                        <div class="mt-8 shadown">
+                            <img src="{{ asset('img/home.png') }}" alt="logo" class="w-32">
+                        </div>
+                        <p class="mt-4 text-base leading-6 text-gray-500">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Voluptatibus, quisquam.
+                        </p>
 
-            <div class="row d-flex align-items-center">
-                <div class="col-3 text-center p-2 border-1 shadow rounded-circle rounded">
-                   <img src="{{asset('img/auth.png')}}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-primary border-2 rounded">
+
+
+
+
+                    </div>
                 </div>
-                <div class=" col-6 p-2 border-1 shadow ">
-                    <img src="{{ asset('img/home4.jpg') }}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-danger border-2 rounded">
-                </div>
-                <div class="col-3 text-center p-2 border-1 shadow rounded-circle rounded btn btn-2">
-                    <img src="{{asset('img/sign.png')}}" alt="" class=" shadow rounded-circle rounded-circle rounded  bg-light col-12 border-danger border-2 rounded">
-                 </div>
-            <div class="p-3 text-center btn btn-1">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit veritatis porro adipisci commodi quae itaque omnis eveniet illum dolores alias, nulla pariatur dolore iste in laudantium, tempore ipsam! Pariatur, minus.
-                </p>
             </div>
         </div>
-    </div>
 
     @endsection
 
